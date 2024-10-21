@@ -3,7 +3,7 @@ name: PART3 - CH1 - Basic Sample
 on: workflow_dispatch
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, ARM64]
     steps:
     - name: Checkout 
       uses: actions/checkout@v2
